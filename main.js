@@ -35,7 +35,7 @@ function draw(){
     console.log(song_Back_toyou);
 
     song_Im_Alive = Im_Alive_song.isPlaying();
-    console.log(song_Im_Alive;
+    console.log(song_Im_Alive);
 
     if(scoreleftWrist > 0.2){
         circle(leftWrist_x,leftWrist_y,20);
