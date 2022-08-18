@@ -1,13 +1,13 @@
-Peter_pan_song="";
-Harry_potter_theme_song="";
+Back_toyou_song="";
+Im_Alive_song="";
 rightWrist_x = 0;
 rightWrist_y = 0;
 leftWrist_x = 0;
 leftWrist_y = 0;
 scoreleftWrist = 0;
 scorerightWrist = 0;
-song_Peter_pan = "";
-song_Harry_potter_theme = "";
+song_Back_toyou = "";
+song_Im_Alive = "";
 
 function setup(){
     canvas = createCanvas(600,530);
@@ -21,8 +21,8 @@ function setup(){
 }
 
 function preload(){
-    Peter_pan_song = loadSound("music2.mp3");
-    Harry_potter_theme_song = loadSound("music.mp3");
+    Back_toyou_song = loadSound("backtoyou.mp3");
+    Im_Alive_song = loadSound("imalive.mp3");
 }
 
 function draw(){
@@ -31,33 +31,33 @@ function draw(){
     fill("#00ff00");
     stroke("#ff0000");
 
-    song_Peter_pan = Peter_pan_song.isPlaying();
-    console.log(song_Peter_pan);
+    song_Back_toyou = Back_toyou_song.isPlaying();
+    console.log(song_Back_toyou);
 
-    song_Harry_potter_theme = Harry_potter_theme_song.isPlaying();
-    console.log(song_Harry_potter_theme);
+    song_Im_Alive = Im_Alive_song.isPlaying();
+    console.log(song_Im_Alive;
 
     if(scoreleftWrist > 0.2){
         circle(leftWrist_x,leftWrist_y,20);
-        Harry_potter_theme_song.stop();
-        if(song_Peter_pan == false){
-            Peter_pan_song.play();
+        Im_Alive_song.stop();
+        if(song_Back_toyou == false){
+           Back_toyou_song.play();
         }
         else{
-            console.log("Song Name: Peter Pan Song");
-            document.getElementById("song_id").innerHTML = "Song Name: Peter Pan Song";
+            console.log("Song Name: Back to you");
+                document.getElementById("song_id").innerHTML = "Song Name: Back to you";
         }
     }
 
-    if(scorerightWrist > 0.2){
-        circle(rightWrist_x,rightWrist_y,20);
-        Peter_pan_song.stop();
-        if(song_Harry_potter_theme == false){
-            Harry_potter_theme_song.play();
+    if(scoreleftWrist > 0.2){
+        circle(leftWrist_x,leftWrist_y,20);
+        Back_toyou_song.stop();
+        if(song_Im_Alive == false){
+           Im_Alive.play();
         }
         else{
-            console.log("Song Name: Harry Potter Theme Song");
-            document.getElementById("song_id").innerHTML = "Song Name: Harry Potter Theme Song";
+            console.log("Song Name: Im Alive");
+            document.getElementById("song_id").innerHTML = "Song Name: Im Alive";
         }
     }
 }
