@@ -14,7 +14,7 @@ body{
     font-size: 20px;
 }
 canvas{
-    background-color: #000000;
+    background-color: light-red;
     border: 5px solid white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #73cfd8;
